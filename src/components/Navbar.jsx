@@ -41,7 +41,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="size-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+          <p className="text-white text-lg font-bold cursor-pointer flex ">
             Chandan Sayed &nbsp;
             <span className="sm:block hidden"> | ES Developer</span>
           </p>
@@ -53,7 +53,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-lg font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
