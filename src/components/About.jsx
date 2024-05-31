@@ -39,7 +39,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-base md:text-lg max-w-3xl"
       >
         I'm a seasoned software developer with extensive experience in TypeScript and JavaScript,
         and deep expertise in frameworks like React, Node.js, and Three.js. I pride myself on being
