@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { Tilt } from "react-tilt";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt className="w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -49,7 +49,7 @@ const About = () => {
         up to make it happen!
       </motion.p>
 
-      <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="mt-20 grid md:grid-cols-2 xl:grid-cols-4 gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
